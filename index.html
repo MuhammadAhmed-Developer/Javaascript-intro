@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMb1lWBka_6gJ1svLjBi8EgLGX2h5OnumGpg&usqp=CAU" class="img-fluid rounded-5">
+    <!-- CSS only bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- css enternal -->
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- change html content -->
+<h2 class=" text-uppercase pt-3 mx-4" id="demo" >javascript can change HTML content</h2>
+<button class="btn btn-dark mx-4" type="button" onclick="document.getElementById('demo').innerHTML='helo javascript'">click me </button>
+<hr>
+<!-- show date an time -->
+<h5 class="mx-4" id="date">click this 👇 button to show date and time</h5>
+<button type="button" class="btn btn-danger mx-4"
+onclick="document.getElementById('date').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<hr>
+<section class="p-4">
+<p>JavaScript can change HTML attribute values.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+<!-- w3school -->
+<button class="btn btn-primary mx-5" onclick="document.getElementById('myImage').src='./assets/images/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="./assets/images/pic_bulboff.gif" style="width:130px">
+
+<button class="btn btn-primary mx-5" onclick="document.getElementById('myImage').src='./assets/images/pic_bulboff.gif'">Turn off the light</button>
+
+</section>
+<hr>
+<!-- change text syle -->
+<p class="lead p-4" id="text">JavaScript can change the style of an HTML element</p>
+<button class="btn btn-secondary mx-5" onclick="document.getElementById('text').style.fontSize='35px'">change font style click me</button>
+<hr>
+<!-- hide text -->
+<h5 class=" p-4">JavaScript can hide text</h5>
+<p id="hide" class="mx-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupiditate adipisci inventore blanditiis error ullam asperiores repudiandae molestiae omnis nisi animi, officia quis quo dolorem, alias voluptatum velit quidem? Unde?</p>
+<button class="btn btn-secondary mx-5" onclick="document.getElementById('hide').style.display='none'">click me to hide text</button>
+<hr>
+<!-- show hide text -->
+<h5 class="p-4">javascript can show hide text </h5>
+<p class="mx-4" style="display:none;" id="show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
+<button class="mx-4 btn btn-primary" onclick="document.getElementById('show').style.display='block'">click me to show hide text</button>
+<hr>
+<!-- clear all page doucnment.writes  -->
+<button onclick=" document.write(5*5)">
+    
+    click to document.write function
+</button>
+<!-- bulb -->
+<div style="text-align:center ;">
+<button onclick="document.getElementById('bulb').src='./assets/images/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="bulb" src="./assets/images/pic_bulboff.gif" alt="bulb">
+
+<button onclick="document.getElementById('bulb').src='./assets/images/pic_bulboff.gif'">Turn off the light</button>
+</div>
+<hr>
+<section class="p-5">
+  <p id="data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, amet?</p>
+<button class="btn btn-info" onclick="stylet();">click me to change style</button>
+</section>
+<hr>
+<p id="goal"></p>
+
+<hr>
+ <button class="mx-5 btn btn-info" onclick="printdocument();">Print</button>
+
+ <hr>
+
+<button class="mx-5 btn btn-primary" onclick="clickalert()">show alert</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+<!-- script external -->
+<script src="./script.js"></script>
+</body>
+</html>
